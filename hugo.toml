@@ -1,4 +1,29 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseurl = "/"
+title = "TF6FS site"
+languageCode = "en-us"
 theme = "mainroad"
+
+[pagination]
+  paginate = 10 # Number of posts per page
+
+[Params]
+  description = "John Doe's Personal blog about everything" # Description of your site
+  opengraph = true
+  readmore = true # Show "Read more" button in list if true
+  pager = true
+  post_meta = ["date", "categories", "tags"] # Order of post meta information
+  mainSections = ["post"] # ~"docs"
+
+[Params.logo]
+  subtitle = "test site" # Logo subtitle
+
+[Params.sidebar]
+  home = "right"   # Configure layout for home page
+  list = "right"   # Configure layout for list pages
+  single = "right" # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["recent", "categories", "taglist"]
+
+[Params.widgets]
+  recent_num = 5 # ウィジェットの表示数
+  tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
